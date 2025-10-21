@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproducción automática de video</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; /* evita scroll */
+    }
+    video {
+      width: 1080px;
+      height: 1920px;
+      object-fit: cover; /* asegura que no se deforme */
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline>
+    <source src="video1.mp4" type="video/mp4">
+    Tu navegador no soporta la reproducción de videos.
+  </video>
+</body>
+</html>
