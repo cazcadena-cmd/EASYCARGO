@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Video adaptable a móvil</title>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-height, height=device-height, initial-scale=1.0, user-scalable=no">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     html, body {
@@ -62,7 +62,7 @@
   </style>
 </head>
 <body>
-  <button id="switchBtn">INGLÉS</button>
+  <button id="switchBtn">ENGLISH</button>
 
   <video id="bgVideo" autoplay muted loop playsinline>
     <source src="video1.mp4" type="video/mp4">
@@ -79,6 +79,8 @@
       video.src = isFirst ? 'video2.mp4' : 'video1.mp4';
       video.load();
       video.play();
+      // Cambiar texto del botón
+      button.textContent = isFirst ? 'ESPAÑOL' : 'ENGLISH';
       isFirst = !isFirst;
     });
   </script>
